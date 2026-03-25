@@ -16,7 +16,7 @@ class TestLogin:
     def test_invalid_username(self, page):
         login = LoginPage(page)
         login.open()
-        login.login("invalid_user", "SuperSecretPassword!")
+        login.login("invalid_username", "SuperSecretPassword!")
 
         assert "Your username is invalid!" in login.get_error_message()
         assert BASE_URL in login.get_current_url()
