@@ -1,4 +1,3 @@
-# SDET Take-Home Assessment
 
 # Playwright Login Test — The Internet Herokuapp
 
