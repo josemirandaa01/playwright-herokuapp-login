@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest
+.pytest_cache/
+
+# Playwright
+test-results/
+playwright-report/
+.auth/
+
+# VS Code
+.vscode/
+
+# pip
+*.egg-info/
+dist/
+build/
+.env
+
+# Windows
+Thumbs.db
+desktop.init
