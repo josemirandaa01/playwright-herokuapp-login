@@ -1,5 +1,5 @@
 from pages.login_page import LoginPage
-from config import BASE_URL
+from config import BASE_URL, SECURE_URL
 
 class TestLogin:
 
@@ -9,7 +9,7 @@ class TestLogin:
         login.open()
         login.login("tomsmith", "SuperSecretPassword!")
 
-        assert "/secure" in login.get_current_url()
+        assert SECURE_URL in login.get_current_url()
         assert "You logged into a secure area!" in login.get_success_message()
 
     # Test Case 2: Login with invalid username

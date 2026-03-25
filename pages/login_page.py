@@ -2,7 +2,7 @@ from config import BASE_URL
 
 class LoginPage:
 
-    def __init__(self, page):
+    def __init__(self, page): # Constructor
         self.page = page
 
     def open(self):
